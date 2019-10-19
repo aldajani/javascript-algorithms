@@ -1,4 +1,6 @@
 // Place your playground code here.
+
+// Linked Lists
 class Node {
   constructor(data, next = null) {
     this.data = data;
@@ -149,13 +151,6 @@ class LinkedList {
 
 }
 
-const ll = new LinkedList();
-
-ll.insertFirst(100);
-ll.insertFirst(200);
-ll.insertFirst(300);
-ll.insertLast(400);
-ll.insertAt(500, 3);
-ll.removeLast();
-
-ll.printListData();
+module.exports = {
+  LinkedList,
+}
