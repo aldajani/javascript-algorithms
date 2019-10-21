@@ -79,7 +79,7 @@ class LinkedList {
 
     while (current) {
       if (count === index) {
-        console.log(current.data);
+        return current.data;
       }
       count++;
       current = current.next;
