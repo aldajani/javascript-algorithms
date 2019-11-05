@@ -36,7 +36,7 @@ describe('LinkedLists', () => {
     expect(LinkedList.getAt(2)).toBe(5);
   });
 
-  it('should inset a node at a given index', () => {
+  it('should insert a node at a given index', () => {
     LinkedList.insertLast(2);
     LinkedList.insertLast(4);
     LinkedList.insertLast(5);
@@ -51,4 +51,12 @@ describe('LinkedLists', () => {
     LinkedList.clearList();
     expect(LinkedList.size).toBe(0);
   });
-});
+
+  it('should remove the last node', () => {
+    LinkedList.insertLast(2);
+    LinkedList.insertLast(4);
+    LinkedList.insertLast(5);
+    LinkedList.removeLast();
+    expect(LinkedList.size).toBe(2);
+  });
+}); 
